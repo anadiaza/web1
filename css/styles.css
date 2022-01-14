@@ -1,0 +1,119 @@
+@charset "ufc-8";
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300&family=Kanit:wght@500&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+        /*comentario* *= selector universal*/
+        * {
+            margin: 0;
+            padding: 0;
+            
+        }
+
+        * {
+            color: red;
+        }
+
+        /*esto anula y sustituye a lo anterior*/
+
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: black
+        }
+    font-family: 'Frank Ruhl Libre', serif;
+
+    font-family: 'Kanit', sans-serif;
+
+    font-family: 'Libre Baskerville', serif;
+        li,
+        a,
+        p {
+            color: dimgrey;
+        }
+
+
+        header h1 {
+
+            width: 100%;
+            /* la propiedad height establece el ancho*/
+            height: 50px;
+            /* la propiedad padding es relleno*/
+            padding: 8px;
+
+            background-color: gray
+        }
+
+        nav {
+            /* borde rojo, linea de 1px lisa*/
+            border: 1px solid red;
+
+        }
+
+        nav h2 {
+            /* visibilidad en pantalla ninguna
+        display: none
+        }
+    
+    article{
+        /* Establece el ancho de los articles */
+            width: 40%;
+            /* Establece el relleno de los articles */
+            padding: 10px;
+            /* Establece el margen de los articles en todos sus lados top left */
+            /* Establece el margen lados: top right botton left */
+            /* Establece el margen lados: margin 3%, 3%, 3%,3% */
+            /* Establece margin 3%,3% */
+            margin: 3%
+                /* Establece el borde de los articles */
+                border: 1px solid black;
+
+        }
+
+        section article article {
+            /*establece ancho 100% para todos los articles hijos el 100%*/
+            width: 100% margin left: 0% margin right: 0%
+        }
+
+        section article {
+            /*establece ancho 100% para todos los articles hijos el 100%*/
+            width: 100% margin left: 0% margin right: 0%
+                /*esto mando sobre todaas las ord anteriores*/
+
+        }
+
+        article,
+        article p,
+            {
+            background-color: lime;
+        }
+
+        article article p article h2 {
+            /* Establece el color de fondo en blanco para:*/
+            /*todos los articles, */
+            /*todos los parraofos herederos de un article, todos los h2 herederos del article */
+
+            background-color: white;
+
+        }
+
+        footer {
+            /*establece alto del footer*/
+            width: 100%;
+            width: calc (100% * 20px);
+            /*establece alto del footer*/
+            height: 80px;
+            /*establece alto de la linea de texto */
+            line-height: 80px;
+            /*establece la alineacion del texto footer */
+            text-align: center;
+            /*establece el relleno del footer10px */
+            padding: 10px;
+            /*establece el color de fondo del footer negro */
+            background-color: black;
+            /*establece el color del textodel footer blanco */
+            color: white;
+        }
+  
