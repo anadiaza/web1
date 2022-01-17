@@ -34,7 +34,7 @@ h6 {
 
 
 p,
-es,
+span,
 strong,
 li,
 a {
@@ -51,31 +51,28 @@ a {
 
 /* font-style de google fonts */
 
-em {
-    font-style: italic;
-
-        /*;
-}
+/* em tamaño fuente*/
+/*............/*;
 
 /* font variant*/
-        .todomayusculas¨ {
-        font-variant: small-caps;
-    }
 
-    .alineadoderecha {
+.todomayusculas {
 
-        text-align: right;
-    }
+      font-variant: small-caps;
+}
 
-    .alinedocentro {
+.alineadoderecha {
 
-        text-align: center;
-    }
+     text-align: right;
+}
 
-    .alineado justificado {
+.alinedocentro {
 
-        text-align: justify;
-    }
+    text-align: center;
+}
+
+.alineadojustificado {
+    text-align: justify;
 /*---------------*/
 /*prioridades*/
 /*.....................*/
@@ -86,19 +83,23 @@ article ol li {color: blue; }
 */
     
 #violeta {color: darkviolet; }
-.rosa{color: pink; }
 li.rosa {color: red; }
 body main article ol li .rosa {color: pink; }
 article ol li {color: blue; }
 li {color:tomato; }
 
 /* colores para una tabla .azul*/
-T
-caption { color: blue; }
-td { color: green; }
-td strong { color: orange; }
-th { color: red; }
-th.especial { color: orange; }
+table .azul th,
+table .azul td {
+    border: 1px solid blue;
+    color: blue;
+}
+
+table.azul th {
+    background-color: blue;
+    color: white;
+}
+
 </style>
 </head>
 
