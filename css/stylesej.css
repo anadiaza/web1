@@ -41,3 +41,11 @@ article.ej2 #adicional {
 article.ej2 #especial {
     color: fuchsia;
 }
+
+ul.galeria li {
+    /* background: lime */
+    
+    list-style: none;
+    display: inline-block;
+    
+}
