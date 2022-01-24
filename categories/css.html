@@ -1,253 +1,121 @@
 <!DOCTYPE html>
 <html lang=es dir=LTR>
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styles.css">
-    <title>Estilos 1</title>
-
-
+    <link rel="stylesheet" href="">
+<style>
+    * {
+        color: red;
+    }
+    
+    h2 {
+        color: green
+    }
+    article h2 {
+        color: blue;
+    }
+    article, h2, p {
+        color: black;
+    }
+    * {
+        margin: 0;
+        padding: 0;
+        background-color:  pink
+    }
+    header h1 {
+        width: 100%;
+        height: 50px;
+        padding: 8px;
+        background-color: gray
+    }
+    nav {
+        border: 1px solid red;
+    }
+   
+    
+    article{
+        width: 45%;
+        padding: 10px;
+        border: 1px solid black;
+        
+    }
+    article, article p, article h2{
+        background-color: white;
+    }
+    /*comentarios que no se ven*/
+    footer h2 {
+        width: 100%;
+        width: calc (100% * 20px);
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        padding: 10px;
+        background-color: black;
+        color: white;
+    }
+    
+    </style>
+   
 </head>
 
 <body>
-    <header>
-        <h1>Mis estilos</h1>
+   <header>
+       <h1>Mis estilos</h1>
+    
+   </header>
+     
+       
+   <nav>
+      <h2>Menu Principal</h2>
+       <ul>
+           <li>
+               <a href="../index.html">Inicio</a>
+           </li>
 
-    </header>
-
-
-    <nav>
-        <h2>Menu Principal</h2>
-        <ul>
-            <li>
-                <a href="../index.html">Inicio</a>
-            </li>
-
-            <li>
-                <a href="../pages/nosotros.html">Nosotros</a>
-            </li>
-            <li>
-                <a href="../pages/contacto.html">Contacto</a>
-            </li>
-        </ul>
-    </nav>
-    <main>
-        <section>
-            <h2>Cómo incluir CSS en un documento XHTML</h2>
-            <article>
-                <h3>Incluir CSS en el mismo documento HTML</h3>
-                <p>
-
-                    referencia : <a href="https://uniwebsidad.com/libros/css/capitulo-6/">Uniwebsidad</a>
-
-
-                </p>
-
-                <p>
-                    Los estilos se definen en una zona específica del propio documento HTML. Se emplea la etiqueta <em>style</em> de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección <em>head</em>).
-
-                </p>
-                <p>
-                    Este método se emplea cuando se define un número pequeño de estilos o cuando se quieren incluir estilos específicos en una determinada página HTML que completen los estilos que se incluyen por defecto en todas las páginas del sitio web.
-                </p>
-                <p>
-                    El principal inconveniente es que si se quiere hacer una modificación en los estilos definidos, es necesario modificar todas las páginas que incluyen el estilo que se va a modificar.
-                </p>
-                <p>
-                    Los ejemplos mostrados en este libro utilizan este método para aplicar CSS al contenido HTML de las páginas. De esta forma el código de los ejemplos es más conciso y se aprovecha mejor el espacio.
-                </p>
-
-            </article>
-            <article>
-                <h3> Definir CSS en un archivo externo </h3>
-                <p class=".todomayusculas pepe">
-                    Este texto esta en smoll-caps
-                </p>
-                <p class=".alineadoderecha">
-                    Este texto esta alineado a la derecha
-                </p>
-                <p class=".alineadocentro">
-                    este texto esta alineado centro
-
-                </p>
-                <p class=".alineadojustificado">
-                    este texto esta alineado justificado
-
-                </p>
-                <p>
-                    En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta <em>link</em>. Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es <em>.css</em> Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite.
-                </p>
-                <p>
-                    Si se quieren incluir los estilos del ejemplo anterior en un archivo CSS externo, se deben seguir los siguientes pasos:
-
-                </p>
-                <ol>
-                    <li> Se crea un archivo de texto y se le añade solamente el siguiente contenido:
-                        <ul>
-                            <li>p { color: black; font-family: Verdana; }</li>
-                        </ul>
-                    </li>
-                    <li>Se guarda el archivo de texto con el nombre <em>estilos.css</em> Se debe poner especial atención a que el archivo tenga extensión <em>.css</em> y no <em>.txt</em></li>
-                    <li>En la página HTML se enlaza el archivo CSS externo mediante la etiqueta <em>link</em></li>
-
-                </ol>
-
-            </article>
-            <article>
-                <h3>Proridades en CSS</h3>
-                <ol>
-                    <li id="violeta" class="rosa">Selector de id (color violeta)</li>
-                    <li class="rosa">Selector clase (color rosa)</li>
-                    <li>Selector varias etiquetas anidadas (color azul)</li>
-                    <li>Selector 1 etiqueta (color tomato)</li>
-                </ol>
-
-            </article>
-        </section>
-        <section>
-            <article>
-                <h2> Lorem 1</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
-
-                </p>
-            </article>
-            <article>
-                <h2> Lorem 2</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
-
-                </p>
-            </article>
-            <article>
-                <h2> Lorem 3</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
-
-                </p>
-            </article>
-            <article>
-                <h2> Lorem 4</h2>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
-
-                </p>
-            </article>
-            
-            <article class="ej3">
-                <h3> Galería de Imágenes</h3>
-                <p>Galería de imagenes obtenidas en Pixabay, con permisos para fines comerciales, no necesita atribución.
-                </p>
-                <ul>
-                    <li>
-                        <a href="../images/a1_bodega_3.jpg href">
-                            <img src="../images/A1_bodega_160.jpg">
-
-                        </a>
-                    </li>
-                    <li>
-                        <a href="../images/A1_fachada_1%20.jpg">
-                            <img src="../images/A1_fachada_160.jpg" alt="">
-                        </a>
-                        
-                    </li>
-                    <li>
-                        <a href="../images/A1_MUSEO_2%20.jpg">
-                            <img src="../images/A1_m">
-
-                        </a>      
-                    </li>
-                    
-              
-
-                </ul>
-
-
-
-            </article>
-
-        </section>
-
-
-        <section>
-            <h2>Artículos anidados</h2>
-            <article>
-                <h3>Anidado lorem 1</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
-
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
-
-                </p>
-                <article>
-                    <h4>Anidado anidado lorem 2</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
-                    </p>
-
-                </article>
-
-            </article>
-
-
-            <article>
-
-                <h3>Estilos para texto</h3>
-
-                <table class=" azul">
-                            <caption>Tipografia</caption>
-                            <thead>
-                                <tr>
-                                    <th>PROPIEDADES</th>
-                                    <th>DESCRIPCIÓN</th>
-
-                                </tr>
-                            </thead>
-
-                            <tbody>
-                                <tr>
-                                    <td>color</td>
-                                    <td>color web</td>
-                                </tr>
-                                <tr>
-                                    <td>Font</td>
-                                    <td>Fuentes web</td>
-                                </tr>
-                                <tr>
-                                    <td>Font-site</td>
-                                    <td>Tamaño web</td>
-                                </tr>
-                                <tr>
-                                    <td>Font- weight</td>
-                                    <td>Grosor letra</td>
-                                </tr>
-                                <tr>
-                                    <td>Font- style</td>
-                                    <td>Normal-italica</td>
-                                </tr>
-
-                            </tbody>
-                            </table>
-
-            </article>
-
-
-        </section>
-
-
-
-    </main>
-    <footer>
-        <h2>Pie página</h2>
-
-    </footer>
-
+           <li>
+               <a href="../pages/nosotros.html">Nosotros</a>
+           </li>
+           <li>
+               <a href="../pages/contacto.html">Contacto</a>
+           </li>
+       </ul>
+   </nav>
+   <main>
+       <article>
+          <h2> Lorem 1</h2>
+           <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
+               
+           </p>
+       </article>
+       <article>
+          <h2> Lorem 2</h2>
+           <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
+               
+           </p>
+       </article>
+       <article>
+          <h2> Lorem 3</h2>
+           <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
+               
+           </p>
+       </article>
+       <article>
+          <h2> Lorem 4</h2>
+           <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Mattis aliquam faucibus purus in massa tempor nec. Mauris pharetra et ultrices neque ornare aenean euismod. Cursus eget nunc scelerisque viverra. Turpis massa sed elementum tempu
+               
+           </p>
+       </article>
+   </main>
+   <footer>
+      <h2>Pie página</h2> 
+       
+   </footer>
+    
 </body>
-
 </html>
+
